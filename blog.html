@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* Barra de navegación */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1E3D59;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo img {
+      height: 60px;
+      width: auto;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+
+    .navbar ul li {
+      margin-left: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover,
+    .navbar ul li a.active {
+      color: #F37021;
+    }
+
+    /* Contenido */
+    .contenido {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .contenido h2 {
+      color: #1E3D59;
+      margin-bottom: 20px;
+      border-left: 6px solid #F37021;
+      padding-left: 10px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: 220px; /* todas las imágenes tendrán la misma altura */
+      object-fit: cover; /* recorta proporcionalmente sin deformar */
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #1E3D59;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      color: #fff;
+    }
+
+    .footer p {
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .iso-logos img {
+      height: 70px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="Logo de la empresa">
+    </a>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienessomos.html">Quiénes somos</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contactos.html">Contacto</a></li>
+      <li class="search-box"><input type="text" placeholder="Buscar"></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido Blog -->
+  <div class="contenido">
+    <h1 style="text-align:center; color:#F37021;">Blog</h1>
+
+    <!-- Saludable -->
+    <h2>Saludable</h2>
+    <div class="galeria">
+      <img src="saludable1.jpg" alt="Saludable 1">
+      <img src="saludable2.jpg" alt="Saludable 2">
+      <img src="saludable3.jpg" alt="Saludable 3">
+    </div>
+
+    <!-- Pausas activas -->
+    <h2>Pausas Activas</h2>
+    <div class="galeria">
+      <img src="pausa1.jpg" alt="Pausas Activas 1">
+      <img src="pausa2.jpg" alt="Pausas Activas 2">
+      <img src="pausa3.jpg" alt="Pausas Activas 3">
+    </div>
+
+    <!-- Cuidado -->
+    <h2>Cuidado</h2>
+    <div class="galeria">
+      <img src="cuidado1.jpg" alt="Cuidado 1">
+      <img src="cuidado2.jpg" alt="Cuidado 2">
+      <img src="cuidado3.jpg" alt="Cuidado 3">
+    </div>
+
+    <!-- Familia -->
+    <h2>Familia</h2>
+    <div class="galeria">
+      <img src="familia1.jpg" alt="Familia 1">
+      <img src="familia2.jpg" alt="Familia 2">
+      <img src="familia3.jpg" alt="Familia 3">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Nuestras certificaciones:</p>
+    <div class="iso-logos">
+      <img src="Iso9001.png" alt="ISO 9001">
+      <img src="Iso14001.png" alt="ISO 14001">
+      <img src="Iso45001.png" alt="ISO 45001">
+    </div>
+  </footer>
+
+</body>
+</html>
