@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1e3d59;
+      color: #fff;
+    }
+
+    /* Barra de navegación fija */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1E3D59; /* Azul corporativo */
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+
+    .navbar ul li {
+      margin-left: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #F37021; /* Naranja corporativo */
+    }
+
+    /* 🔹 Caja de búsqueda */
+    .search-box input {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      background-color: #F37021;
+      color: #fff;
+      font-weight: bold;
+      outline: none;
+    }
+
+    .search-box input::placeholder {
+      color: #fff;
+      opacity: 0.8;
+    }
+
+    .contenido {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .contenido h1 {
+      text-align: center;
+      color: #F37021;
+      margin-bottom: 20px;
+    }
+
+    .contenido p {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    /* Estilos para servicios */
+    .servicios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .servicio-box {
+      background-color: #284b63;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+      color: #fff;
+    }
+
+    .servicio-box h3 {
+      color: #F37021;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .servicio-box ul {
+      padding-left: 20px;
+    }
+
+    .servicio-box ul li {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .footer {
+      background-color: #162d40;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      color: #fff;
+    }
+
+    .footer p {
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #F37021;
+    }
+
+    .iso-logos img {
+      height: 70px; /* 🔹 Más grandes */
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="Logo de la empresa">
+    </a>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienessomos.html">Quiénes somos</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contactos.html">Contacto</a></li>
+      <!-- 🔹 Buscador agregado -->
+      <li class="search-box">
+        <input type="text" placeholder="Buscar...">
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Contenido -->
+  <div class="contenido">
+    <h1>Nuestros Servicios</h1>
+    <p>
+      Acompañamos a nuestros aliados estratégicos con soluciones oportunas y a la medida,
+      en aspectos relacionados con:
+    </p>
+
+    <div class="servicios-grid">
+      <!-- Auditoría Interna -->
+      <div class="servicio-box">
+        <h3>Auditoría Interna</h3>
+        <ul>
+          <li>Sistema de Gestión en Seguridad y Salud SGSS (ISO 45001:2018)</li>
+          <li>Seguridad y Salud en el trabajo con energía eléctrica (Res. 5018:2019)</li>
+          <li>Registro Uniforme de Evaluación del Sistema de Gestión en Seguridad, Salud Ocupacional y Ambiente para Contratistas – RUC</li>
+          <li>Sistemas de Gestión de la Calidad (ISO 9001:2015)</li>
+          <li>Sistemas Integrados de Gestión HSEQ</li>
+          <li>Sistema de Gestión en Ambiental SGA (ISO 14001:2015)</li>
+          <li>Gestión del riesgo (ISO 31000:2018)</li>
+          <li>Sistemas de Gestión de la Seguridad Vial (ISO 39001:2012)</li>
+          <li>Auditorías de Sistemas de Gestión (ISO 19011:2018)</li>
+          <li>Gestión del Riesgo de Desastres (Decreto 2157 de 2017)</li>
+          <li>Responsabilidad social empresarial (ISO 26001:2010)</li>
+          <li>Sistemas de Gestión en Control y Seguridad BASC (SGCS BASC V5-2017)</li>
+        </ul>
+      </div>
+
+      <!-- Asesoría y Consultoría -->
+      <div class="servicio-box">
+        <h3>Asesoría y Consultoría</h3>
+        <ul>
+          <li>Comité de Convivencia.</li>
+          <li>Comité Paritario de Seguridad y Salud en el Trabajo.</li>
+          <li>Identificación de los peligros y valoración de los riesgos.</li>
+          <li>Investigación de accidentes e incidentes basados en la gestión integral y la mejora continua.</li>
+          <li>Mediciones de Higiene Industrial y Ambiental.</li>
+          <li>Sistema de protección contra caídas.</li>
+          <li>Tareas de alto riesgo.</li>
+          <li>Promoción de la salud y prevención de enfermedades.</li>
+          <li>Estilos de vida saludable.</li>
+          <li>Gestión del riesgo de desastres.</li>
+          <li>Diagnósticos de condiciones de salud.</li>
+          <li>Programas psicosociales.</li>
+          <li>Protocolos y temas de bioseguridad.</li>
+          <li>Desinfección y sanitización.</li>
+          <li>Campañas y jornadas saludables.</li>
+        </ul>
+      </div>
+
+      <!-- Capacitación y Entrenamiento -->
+      <div class="servicio-box">
+        <h3>Capacitación y Entrenamiento</h3>
+        <ul>
+          <li>Riesgo físico</li>
+          <li>Riesgo químico</li>
+          <li>Riesgo biomecánico</li>
+          <li>Riesgo de seguridad</li>
+          <li>Riesgo locativo</li>
+          <li>Riesgo eléctrico</li>
+          <li>Riesgo público</li>
+          <li>Riesgo psicosocial</li>
+          <li>Riesgo biológico</li>
+          <li>Higiene preventiva y del trabajo</li>
+          <li>Higiene industrial</li>
+        </ul>
+      </div>
+
+      <!-- Desarrollo y Certificación -->
+      <div class="servicio-box">
+        <h3>Desarrollo y Certificación de Habilidades</h3>
+        <ul>
+          <li>Primeros auxilios</li>
+          <li>Brigadas de respuesta a emergencias</li>
+          <li>Técnicas de evacuación y rescate</li>
+          <li>Brigadas contra incendios</li>
+          <li>Manejo y control de sustancias químicas peligrosas</li>
+          <li>Trabajo seguro en alturas</li>
+          <li>Trabajo seguro en espacios confinados</li>
+          <li>Atención a víctimas en siniestros viales</li>
+          <li><strong>Certificación internacional de Brigadista integral</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Nuestras certificaciones:</p>
+    <div class="iso-logos">
+      <img src="Iso9001.png" alt="ISO 9001">
+      <img src="Iso14001.png" alt="ISO 14001">
+      <img src="Iso45001.png" alt="ISO 45001">
+    </div>
+  </footer>
+
+</body>
+</html>

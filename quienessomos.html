@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiénes Somos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1e3d59;
+      color: #fff;
+    }
+
+    /* Barra de navegación fija */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1E3D59; /* Azul corporativo */
+      padding: 10px 20px;
+      position: sticky; /* 🔹 Barra fija */
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+
+    .navbar ul li {
+      margin-left: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #F37021; /* Naranja corporativo */
+    }
+
+    /* 🔹 Caja de búsqueda */
+    .search-box input {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      background-color: #F37021;
+      color: #fff;
+      font-weight: bold;
+      outline: none;
+    }
+
+    .search-box input::placeholder {
+      color: #fff;
+      opacity: 0.8;
+    }
+
+    .contenido {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contenido h1 {
+      color: #F37021; /* Naranja */
+      margin-bottom: 20px;
+    }
+
+    .contenido h2 {
+      color: #F37021;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .contenido p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .contenido ul {
+      text-align: left;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .contenido img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+      margin: 20px 0;
+    }
+
+    .footer {
+      background-color: #162d40;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      color: #fff;
+    }
+
+    .footer p {
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #F37021;
+    }
+
+    .iso-logos img {
+      height: 70px; /* 🔹 Más grandes */
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="Logo de la empresa">
+    </a>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienessomos.html">Quiénes somos</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contactos.html">Contacto</a></li>
+      <!-- 🔹 Buscador agregado -->
+      <li class="search-box">
+        <input type="text" placeholder="Buscar...">
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Contenido -->
+  <div class="contenido">
+    <h1>Quiénes Somos</h1>
+    <p>
+      ATSSAS S.A.S. somos una empresa con 10 años de experiencia, siendo un aliado estratégico en
+      Seguridad y Salud en el Trabajo para nuestros clientes, con presencia a nivel nacional.
+    </p>
+
+    <!-- Imagen principal -->
+    <img src="Imag1.png" alt="Nuestra misión">
+
+    <!-- Misión -->
+    <h2>Misión</h2>
+    <p>
+      ATSSAS S.A.S. es una organización innovadora, con la capacidad de identificar, estructurar, 
+      construir y consolidar proyectos de gestión integral del riesgo sobre la seguridad y la salud en el trabajo. 
+      Trabajamos bajo un enfoque transdisciplinario, exaltando el talento humano y la responsabilidad social empresarial, 
+      con un alto nivel de calidad y pertinencia, regidos por normas nacionales e internacionales, en beneficio de nuestros 
+      clientes internos y partes interesadas.
+    </p>
+
+    <!-- Visión -->
+    <h2>Visión</h2>
+    <p>
+      En el 2025 ATSSAS S.A.S. será reconocida como una empresa líder en la entrega de servicios y desarrollo de proyectos 
+      a la medida de las necesidades de nuestros clientes, con aliados estratégicos que optimizan la plataforma para el 
+      crecimiento de la organización, sustentada con personal altamente calificado, que desarrollará sus actividades de 
+      forma segura y responsable con el medio ambiente.
+    </p>
+
+    <!-- Valores -->
+    <h2>Valores</h2>
+    <ul>
+      <li>Orientación al Cliente</li>
+      <li>Responsabilidad</li>
+      <li>Oportunidad</li>
+      <li>Integridad</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Nuestras certificaciones:</p>
+    <div class="iso-logos">
+      <img src="Iso9001.png" alt="ISO 9001">
+      <img src="Iso14001.png" alt="ISO 14001">
+      <img src="Iso45001.png" alt="ISO 45001">
+    </div>
+  </footer>
+
+</body>
+</html>
